@@ -1,8 +1,8 @@
 run: compile
-	./a.out
+	@./a.out
 compile: main.o
-	gcc main.o
+	@gcc main.o
 main.o: main.c
-	gcc -o main.c
+	@gcc -c main.c
 clean:
-	rm -f *.o a.out
+	@rm -f *.o a.out
